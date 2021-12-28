@@ -14,10 +14,6 @@ def restart_server(port):
     httpd.shutdown()
     create_server(port)
 
-async def get_command():
-    command = input("$ ")
-    return command
-
 def handle_command(command):
     if command == "stop":
         httpd.shutdown()
